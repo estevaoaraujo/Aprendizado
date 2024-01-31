@@ -10,20 +10,14 @@ import java.util.ArrayList;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Mae mae = new Mae();
-        mae.setNome("Maria");
-        mae.setIdade(30);
+        Mae mae = new Mae("Maria", 33);
         System.out.println("Nome da mae é " + mae.getNome());
         mae.ficha();
 
-        Filho filho = new Filho();
-        filho.setNome("Marcos");
-        filho.setIdade(21);
+        Filho filho = new Filho("Marcos",20);
         filho.ficha();
 
-        Filha filha = new Filha();
-        filha.setNome("Larrisa");
-        filha.setIdade(19);
+        Filha filha = new Filha("Larrisa",19);
         filha.ficha();
 
         Operacoes operacoes = new Operacoes();

@@ -4,6 +4,11 @@ import br.com.Aprendizado.face.Particularidades;
 import br.com.Aprendizado.financeiro.Operacoes;
 
 public class Mae implements Particularidades {
+    public Mae(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
     private String nome;
     private int idade;
 
@@ -25,7 +30,7 @@ public class Mae implements Particularidades {
 
     @Override
     public int getparticular() {
-        return 10;
+        return 1000;
     }
     public String toString(){
         return nome;
