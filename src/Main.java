@@ -10,7 +10,7 @@ import java.util.ArrayList;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Mae mae = new Mae("Maria", 33);
+        Mae mae = new Mae("ANA", 33);
         System.out.println("Nome da mae é " + mae.getNome());
         mae.ficha();
 
