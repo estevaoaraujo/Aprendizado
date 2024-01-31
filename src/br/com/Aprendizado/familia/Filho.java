@@ -7,8 +7,5 @@ public class Filho extends Mae implements Particularidades {
         super(nome, idade);
     }
 
-    @Override
-    public int getparticular() {
-        return getIdade();
-    }
+
 }

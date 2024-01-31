@@ -10,7 +10,7 @@ import java.util.ArrayList;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Mae mae = new Mae("ANA", 33);
+        Mae mae = new Mae("Maria", 61);
         System.out.println("Nome da mae é " + mae.getNome());
         mae.ficha();
 
@@ -33,10 +33,16 @@ public class Main {
         operacoes.setSaldo(200);
         operacoes.mensagem();
 
-        ArrayList<Mae>listaDeMae = new ArrayList<>();
-        listaDeMae.add(mae);
+        ArrayList<Mae>lista = new ArrayList<>();
+        lista.add(mae);
+        lista.add(filha);
+        lista.add(filho);
 
-        System.out.println(listaDeMae);
+        System.out.println(lista);
+
+        mae.getparticular();
+        filha.getparticular();
+        filho.getparticular();
 
     }
 }

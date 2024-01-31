@@ -5,8 +5,8 @@ import br.com.Aprendizado.financeiro.Operacoes;
 
 public class Mae implements Particularidades {
     public Mae(String nome, int idade) {
-        this.nome = nome;
-        this.idade = idade;
+        this.setNome(nome);
+        this.setIdade(idade);
     }
 
     private String nome;
@@ -25,12 +25,22 @@ public class Mae implements Particularidades {
         return idade;
     }
     public void ficha(){
-        System.out.println("Nome: "+ getNome()+ " Idade: "+ getIdade());
+        System.out.println("Nome:: "+ getNome()+ " Idade: "+ getIdade());
     }
 
     @Override
     public int getparticular() {
-        return 1000;
+
+        if(getIdade()<18){
+            System.out.println(getNome() + " é maior de idade.");
+        }else if( getIdade()>18 && getIdade()<50){
+            System.out.println(getNome()+" é uma jovem");
+        }else{
+            if(getIdade()>60){
+                System.out.println(getNome() + " é idosa");
+            }
+        }
+        return 0;
     }
     public String toString(){
         return nome;

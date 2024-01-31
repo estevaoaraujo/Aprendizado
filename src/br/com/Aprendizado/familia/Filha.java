@@ -6,9 +6,4 @@ public class Filha extends Mae implements Particularidades {
     public Filha(String nome, int idade) {
         super(nome, idade);
     }
-
-    @Override
-    public int getparticular() {
-        return getIdade();
-    }
 }
